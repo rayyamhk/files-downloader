@@ -4,14 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    label {
+      display: block;
+      margin: 5px 0px;
+    }
+    input {
+      color: #333;
+      margin-top: 5px;
+      padding: 3px 6px;
+    }
+    input:focus {
+      outline-color: #3498db;
+    }
+
+    #download-btn {
+      color: #eee;
+      background-color: #3498db;
+      border: 1px solid #3498db;
+      cursor: pointer;
+      padding: 5px 10px;
+      margin-top: 6px;
+      transition: .2s all ease;
+    }
+    #download-btn:hover {
+      background-color: #fff;
+      color: #3498db;
+    }
+  </style>
 </head>
 <body>
   <label for="pattern">
-    Pattern:
+    URL Pattern:
     <input type="text" name="pattern">
   </label>
   <label for="extension">
-    Extension:
+    Filename Extension:
     <input type="text" name="extension">
   </label>
   <button id="download-btn">

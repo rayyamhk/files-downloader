@@ -6,13 +6,25 @@
   "permissions": [
     "downloads"
   ],
+  "icons": {
+    "16": "images/search16.png",
+    "32": "images/search32.png",
+    "48": "images/search48.png",
+    "128": "images/search128.png"
+  },
   "browser_action": {
     "default_title": "Download all files on current tab in one click",
     "default_popup": "popup.html"
   },
   "background": {
     "scripts": [ "background.js" ],
-    "persistent": false
+    "persistent": false,
+    "default_icon": {
+      "16": "images/search16.png",
+      "32": "images/search32.png",
+      "48": "images/search48.png",
+      "128": "images/search128.png"
+    }
   },
   "content_scripts": [
     {
