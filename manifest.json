@@ -1,13 +1,13 @@
 {
   "name": "Files Downloader",
   "version": "1.0.0",
-  "description": "Download all files on current website",
+  "description": "Download all files on current tab in one click",
   "manifest_version": 2,
   "permissions": [
     "downloads"
   ],
   "browser_action": {
-    "default_title": "Download all files on current website",
+    "default_title": "Download all files on current tab in one click",
     "default_popup": "popup.html"
   },
   "background": {
