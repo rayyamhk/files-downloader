@@ -1,0 +1,23 @@
+{
+  "name": "Files Downloader",
+  "version": "1.0.0",
+  "description": "Download all files on current website",
+  "manifest_version": 2,
+  "permissions": [
+    "downloads"
+  ],
+  "browser_action": {
+    "default_title": "Download all files on current website",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [ "background.js" ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [ "content.js" ]
+    }
+  ]
+}
