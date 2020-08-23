@@ -5,7 +5,7 @@ A chrome extension that can help you download all files on your current tab with
 
 
 ## URL Pattern
-Filter out all urls which are matched with the given pattern. It is used to create a Regular Expression as ``new RegExp(pattern)``.
+A Regular Expression is created, i.e. ``new RegExp(pattern)``, to filter out all urls which are matched with the given pattern.
 
 ## Filename Extension
 Filter out all files with correct filename extension. If the filename extension is jpg, jpeg, png, the chrome extension searches all ``<img>`` tags on current tab. Otherwise, it only searches all ``<a>`` tags.
